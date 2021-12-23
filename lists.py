@@ -39,6 +39,9 @@ def test_location(cards, query, mid):
         return 'right'
 
 #linear serach 
+
+cards = [2,5,6,2,8,9,4,3]
+query = 8
 def locate_card_linear(cards, query):
     position = 0
     while position < len(cards):
@@ -46,4 +49,5 @@ def locate_card_linear(cards, query):
             return position
         position += 1
     return -1
-    
+
+locate_card_linear
